@@ -10,6 +10,7 @@
   --hue: 152;
   --first-color: rgb(245, 175, 0);
   --first-color-alt: rgb(200, 128, 2);
+  --first-color-dark: hsl(45, 8%, 20%);
   --first-color-light: hsl(var(--hue), 24%, 66%);
   --first-color-lighten: hsl(var(--hue), 24%, 92%);
   --title-color: hsl(var(--hue), 4%, 95%);
@@ -372,6 +373,7 @@ img{
 }
 
 .about__img{
+  border-radius: 15px;
   width: 280px;
   justify-self: center;
 }
@@ -799,11 +801,16 @@ img{
 }
 
 .footer__social{
-  display: inline-flex;
-  column-gap: .75rem;
+  margin: 2rem 0 1rem;
+  padding: 0 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
 }
 
 .footer__social-link{
+
   font-size: 1rem;
   color: var(--text-color);
   transition: .3s;
@@ -826,7 +833,7 @@ img{
   text-align: center;
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
-  margin: 5rem 0 1rem;
+  margin: 2rem 0 1rem;
 }
 
 /*=============== SCROLL UP ===============*/
@@ -1053,7 +1060,7 @@ img{
     grid-template-columns: 1fr .5fr .5fr .5fr;
   }
   .footer__copy{
-    margin: 7rem 0 2rem;
+    /* margin: 7rem 0 2rem; */
   }
 }
 
