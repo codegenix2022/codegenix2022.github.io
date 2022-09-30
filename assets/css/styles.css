@@ -966,10 +966,20 @@ img{
     top: 30%;
   }
 
-  .questions__container{
-    align-items: flex-start;
+  .cs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
+  .cs div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cs div img {
+    width: 50%;
+  }
   .footer__container{
     column-gap: 3rem;
   }
@@ -1059,9 +1069,9 @@ img{
   .footer__container{
     grid-template-columns: 1fr .5fr .5fr .5fr;
   }
-  .footer__copy{
-    /* margin: 7rem 0 2rem; */
-  }
+  /* .footer__copy{
+    margin: 7rem 0 2rem;
+  } */
 }
 
 @media screen and (min-width: 1200px){
