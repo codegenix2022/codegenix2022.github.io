@@ -75,7 +75,6 @@
         }
     }
     
-    .home__container,
     .about__container,
     .questions__container,
     .contact__container,
@@ -83,20 +82,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .home{
-        padding: 10rem 0 5rem;
-        
-        &__container{
-            align-items: center;
-        }
-        &__img{
-            width: 280px;
-            order: 1;
-        }
-        &__social{
-            top: 30%;
-        }
-    }
+    
 
     .questions__container{
         align-items: flex-start;
