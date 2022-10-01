@@ -434,6 +434,24 @@ img{
 }
 
 /*=============== STEPS ===============*/
+.event-day{
+  border-top: 5px solid var(--first-color);
+  background-color: rgb(225, 255, 255, 0.1);
+  border-radius: 5px 5px 0 0;
+  margin-top: 1rem;
+  padding: 1rem;
+  transition: all ease 0.3s;
+}
+.event-day:hover{
+  background-color: rgb(225, 255, 200, 0.2);
+  color: white;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+.event-day:hover h2{
+  color: var(--first-color) !important;
+  transition: all ease 0.3s;
+}
 .steps__bg{
   background-color: hsl(45, 8%, 20%);
   padding: 3rem 2rem 2rem;
