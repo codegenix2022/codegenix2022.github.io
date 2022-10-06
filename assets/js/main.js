@@ -140,3 +140,31 @@ sr.reveal(`.home__social`, {delay: 600})
 sr.reveal(`.about__img, .contact__box`,{origin: 'left'})
 sr.reveal(`.about__data, .contact__form`,{origin: 'right'})
 sr.reveal(`.steps__card, .product__card, .questions__group, .footer`,{interval: 100})
+
+
+// =============FULL SCREEN============
+
+const fullScreenBtn = document.getElementById('full-screen')
+function getFullscreenElement(){
+    return document.fullscreenElement
+        || document.webkitFullscreenElement
+        || document.mozFullscreenElement
+        || document.msFullscreenElement;
+}
+function toggleFullScreen(){
+    if(getFullscreenElement()){
+        document.exitFullscreen();
+        fullScreenBtn.classList.remove('active-fullscreen');
+
+    }else{
+
+        document.documentElement.requestFullscreen().catch(console.log);
+        fullScreenBtn.classList.add('active-fullscreen');
+    }
+}
+document.addEventListener("dblclick", () =>{
+    toggleFullScreen();
+})
+
+
+
