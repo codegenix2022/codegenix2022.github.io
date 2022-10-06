@@ -747,15 +747,6 @@ img{
   z-index: -1;
 }
 
-/* Table */
-.info-table tr{
-  /* background-color: #fff; */
-  border: none;
-}
-.info-table tr th{
-  text-align: right;
-  padding: 10px 12px;
-}
 
 
 /* CS */
@@ -1139,17 +1130,41 @@ img{
 
 
 /* ===========PROGRESS=========== */
+/* .rtcm-about-h2{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+} */
+.c-img {
+  display: inline;
+  
+  max-width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  
+}
+.c-img img{
+  max-width: 2rem;
+  height: 2rem;
+  margin-top: 0.1rem;
+  margin-left: 0.1rem;
+  /* height: 100%; */
+  position: absolute;
+
+}
 .process-wrapper {
 	margin:auto;
 	max-width:1080px;
+  padding-top: 8rem;
 }
 
 #progress-bar-container {
 	position:relative;
-	width:90%;
+	width:100%;
 	margin:auto;
 	height:100px;
-	margin-top:65px;
 }
 
 #progress-bar-container ul {
@@ -1298,9 +1313,13 @@ img{
   border-radius: 5px;
 }
 .time-desc {
+  border-radius: 0 0 5px 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* height: 100%; */
+  height: 308px;
+  overflow: hidden;
 }
 @keyframes FadeInUp {
 	0% {
@@ -1312,4 +1331,78 @@ img{
 		transform:translateY(0px);
 		opacity:1;
 	}
+}
+
+/* =======YouTube Video event======= */
+/* .yt-video{
+  position: relative;
+  width: 60%;
+  padding-bottom: 33.8%; 
+  height: 0;
+  overflow: hidden;
+} */
+.yt-video{
+  width: 544px;
+  height: 308px;
+}
+
+
+
+/* =======SPEAKER CARD=========*/
+.speker-card {
+  padding-bottom: 33.5%;
+  height: 100% !important;
+  max-width: 100%;
+  background-color: #fff2;
+}
+.speker-up img{
+  width: 60px;
+  height: 60px;
+}
+
+
+/* ============full screen active========= */
+.ful-scrn{
+  font-size: 1.3rem;
+  transition: all ease 0.3s;
+
+
+}
+.ful-scrn:hover{
+  transform: scale(1.3);
+  color: var(--first-color);
+  transition: all ease 0.3s;
+
+}
+
+.active-fullscreen {
+  color:var(--first-color);
+}
+
+
+
+/* Table */
+.info-table tr{
+  border: none;
+}
+.info-table tr th, .info-table tr td{
+  font-size: 1.4rem;
+  text-align: center;
+  /* padding: 10px 12px; */
+}
+.info-table tr {
+  background-color: #aaa2;
+  padding: 0.5rem;
+  border-radius: 20px;
+  margin-top: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all ease-in-out 0.3s;
+}
+.info-table tr:hover {
+  background-color: #aaa4;
+  color: var(--first-color);
+  transition: all ease-in-out 0.3s;
+
 }
